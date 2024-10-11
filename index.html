@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buenas news</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        box-shadow: 50px;
+        border-radius: 10px;
+        gap: 35px;
+        max-width: 450px;
+        text-align: center;
+      }
+
+      .principal{
+        border-radius: 50px 50px 0 0;
+        width: 450px;
+      }
+      .sobre h1 {
+        font-weight: 50px;
+      }
+      .sobre p {
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        padding: 20px 60px;
+
+        
+      }
+      .compra {
+        border-radius: 10px;
+        background-color: #0E5F9A;
+        border: none;
+        padding: 10px 60px;
+        
+       
+      }
+      .compra a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      
+      }
+      .cancelar {
+        border-radius: 25px;
+        color :#0E5F9A;
+        margin-bottom: 30px;
+        
+      }
+      .plano{
+
+        background-color: #dbeefa;
+        max-width: 350px;
+        border-radius: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        width: 400px;
+
+      }
+
+      .tipo_plano{
+        display: flex ;
+        margin: 0 0;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+       
+      }
+
+     .tipo_plano img{
+        width: 50px;
+        height: 50px;
+        
+       
+      
+      }
+      .nome_plano{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+      }
+      .nome_plano h1{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+   
+      }
+      .nome_plano p{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+    .alterar_plano a{
+        color:#0E5F9A ;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <img class="principal" src="/listen.jpg" alt="" />
+        <div class="sobre">
+            <h1>Resumo do pedido</h1>
+            <p>Você pode ouvir milhões de músicas, áudio-livros e podcasts em qualquer dispositivo, onde você preferir!</p>
+        </div>
+        <div class="plano">
+            <div class="tipo_plano">
+                <img src="https://th.bing.com/th/id/R.772635d931afd40a97258cb70bee71a4?rik=OsWcA4sAosENvg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fmusic-symbols-png-26.png&ehk=5XaHAjFpnlTkCVpze9Sk0kCKdFjS8s8Q0hy90E7Bjc4%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div class="nome_plano">
+                    <h1>Plano mensal</h1>
+                    <p>R$ 59,99</p>
+                </div>
+            </div>
+            <div class=" alterar_plano">
+                <a>Alterar</a>
+            </div>
+        </div>
+        <button class="compra"> <a href="">Continuar para o pagamento</a></button>
+        <h3 class="cancelar">Cancelar compra</h3>
+      </div>
+    </main>
+  </body>
+</html>
